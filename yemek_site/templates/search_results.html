@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arama Sonuçları</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}"> <!-- CSS dosyanızı eklemeyi unutmayın -->
+</head>
+<body>
+    <h1>Arama Sonuçları</h1>
+    <div class="card-container">
+        {% for card in results %}
+        <div class="card">
+            <img src="{{ card.resim.url }}" alt="{{ card.isim }}" class="card-img">
+            <div class="card-body">
+                <h2>{{ card.isim }}</h2>
+                <p>{{ card.aciklama }}</p>
+            </div>
+        </div>
+        {% empty %}
+        <p>Aradığınız kriterlere uygun sonuç bulunamadı.</p>
+        {% endfor %}
+    </div>
+</body>
+</html>

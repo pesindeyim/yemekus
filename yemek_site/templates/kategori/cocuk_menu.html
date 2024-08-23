@@ -1,0 +1,15 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Çocuk Menüsü</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'navbar_head.css' %}">
+</head>
+<body>
+    {% include 'navbar_body.html' %}
+    <!-- Dinamik içerik alanı -->
+    {% include 'card_yapisi.html' %}
+</body>
+</html>

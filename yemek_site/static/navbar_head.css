@@ -1,0 +1,147 @@
+/* Navbar stil ayarları */
+   
+.navbar {
+    background-color: #8c60bc;
+    padding: 8px;
+    transition: background-color 0.5s ease;
+    border-radius: 4px;
+    position: fixed; /* Sabit konumlandırma */
+    top: 0;
+    left: 0;
+    width: 100%; /* Navbar'ın tam genişlik kaplamasını sağla */
+    z-index: 1000; /* Navbar'ın diğer içeriklerin üstünde kalması için */
+}
+body {
+    padding-top: 60px; /* Navbar'ın yüksekliği kadar boşluk bırak */
+}
+.navbar:hover {
+    background-color: #e07d7d; /* Hover (fare ile üzerine gelince) rengi */
+    .btn-mor{
+        background-color: #e07d7d; /* Hover (fare ile üzerine gelince) mor rengi */
+    }
+}
+
+.navbar-brand {
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.5s ease;
+    margin-left: 12px;
+}
+
+.form-control {
+    width: 480px; /* Arama kutusunu genişlettim */
+    height: 30px; /* Yüksekliği artırdım */
+    font-size: 12px; /* Yazı boyutunu büyüttüm */
+    padding: 5px;
+    border-radius: 8px;
+}
+
+.btn-mor {
+    background-color: #8c60bc;
+    color: white;
+    border: none;
+    padding: 0;
+    border-radius: 0;
+    margin-left: 20px;
+    font-size: 13px;
+    cursor: pointer;
+    font-family: Arial, sans-serif; /* Butonlara Arial fontu uyguladım */
+    transition: background-color 0.5s ease;
+}
+
+.giris-yap-btn {
+    background-color: #6c3483;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: normal;
+    font-family: Arial, sans-serif; /* Butonlara Arial fontu uyguladım */
+    transition: background-color 0.3s ease; /* Geçiş efekti */
+}
+
+.giris-yap-btn:hover {
+    background-color: #a46649;
+}
+
+.container-fluid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Arama kutusu ve kategoriler düğmesi */
+.search-and-categories {
+    display: flex;
+    align-items: center;
+}
+
+.categories-dropdown {
+    position: relative;
+    display: inline-block; /* Yan yana konumlandırmak için */
+    margin-right: 10px; /* Arama kutusu ile kategoriler arasında boşluk */
+}
+
+.categories-btn {
+    background-color: #6f42c1; /* Mor renkte buton */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 12px; /* Köşeleri yuvarlatma */
+    font-size: 14px; /* Yazı boyutu */
+    font-family: Arial, sans-serif; /* Font ailesi */
+    transition: background-color 0.3s ease; /* Geçiş efekti */
+}
+
+.categories-btn:hover {
+    background-color: #5a2a7e; /* Hover rengi */
+}
+
+.categories-menu {
+    display: none; /* Başlangıçta gizli */
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    width: 300px; /* Menü genişliği */
+    top: 100%; /* Menü, düğmenin altına hizalanır */
+    left: 0; /* Menü, düğmenin sol tarafına hizalanır */
+    border-radius: 8px; /* Menü köşelerini yuvarlatma */
+}
+
+.category-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.category-item {
+    flex: 1 0 30%; /* 4 sütun düzeni */
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    border-bottom: 1px solid #eee; /* Kategoriler arasında sınır */
+}
+
+.category-item:hover {
+    background-color: #f8f9fa; /* Üzerine gelindiğinde arka plan rengi değişir */
+}
+
+.categories-dropdown:hover .categories-menu {
+    display: block; /* Üzerine gelindiğinde menüyü gösterir */
+}
+.card-container {
+    display: flex;
+    flex-wrap: wrap; /* Kartları sarmaya izin ver */
+    justify-content: space-around; /* Kartları yatayda aralıklı hizala */
+    padding: 20px;
+}
+
+.card {
+    margin: 10px;
+    width: 300px; /* Kartın genişliği */
+}
